@@ -6,25 +6,39 @@ import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 
 const Stylediv=styled.div`
-.itembox{
-   width: 95%;
-   height: 6vh;
-
+.mainbox{
+    width: 95%;
+    display: flex;
+   flex-direction: column;
+   gap: 2vh;
    border: 1px solid gray;
    margin: auto;
 }
+.itembox{
+   width: 95%;
+   height: 6vh;
+  padding:10px;
+   border: 1px solid gray;
+}
   .logoCompany{
-    width: 90%;
+    width: 50%;
     height: 5vh;
     display: flex;
     flex-direction: row;
+    padding:5px;
    align-items: center;
    gap: 10px;
-   margin: auto;
+  
   }
   .image{
     width: 7%;
     height: 90%;
+  }
+  .topbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
   }
 `;
 export const JobListingPage=()=> {
@@ -43,8 +57,13 @@ const [jobData, setJobData]= useState([])
   return (
     <>
     <Stylediv>
-    <div>JobListingPage</div>
-    <div>
+    <div className=''>
+        <p>Job Listing Page</p>
+        <Link>
+        <p>Add new job</p>
+        </Link>
+    </div>
+    <div className='mainbox'>
         {jobData.map((item)=>{
             return (
                 <div className='itembox' key={item.id}>
