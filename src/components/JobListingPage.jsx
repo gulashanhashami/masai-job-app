@@ -59,7 +59,7 @@ const [jobData, setJobData]= useState([])
     <Stylediv>
     <div className=''>
         <p>Job Listing Page</p>
-        <Link>
+        <Link to={"/addjob"}>
         <p>Add new job</p>
         </Link>
     </div>
