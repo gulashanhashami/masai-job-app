@@ -1,0 +1,28 @@
+{
+  "jobData": [
+    {
+      "company_name": "Ellette",
+      "city": "Bangalore",
+      "company_address": "Bangalore",
+      "role_name": "Frontend",
+      "level_date": "Junior",
+      "position": "Junior frontend",
+      "language": "Javascript",
+      "contract": "full",
+      "postedAt": "2022-12-03",
+      "id": 1
+    },
+    {
+      "company_name": "Jinny",
+      "company_address": "Ludhiana",
+      "city": "Ludhiana",
+      "state_name": "",
+      "start_date": "",
+      "position": "Junior frontend ",
+      "contract": "part",
+      "description": "",
+      "postedAt": "2022-12-01",
+      "id": 2
+    }
+  ]
+}
