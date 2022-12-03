@@ -73,7 +73,7 @@ const handleChange=(e)=>{
        <form onSubmit={(e)=>{
           
            e.preventDefault();
-           axios.post(`http://localhost:3001/jobData`, pdata).then((res)=>{
+           axios.post(`https://jsonmock-pa4s.onrender.com/jobData`, pdata).then((res)=>{
               setData({
                 company_name:"",
                 company_address:"",

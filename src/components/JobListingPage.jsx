@@ -34,7 +34,7 @@ const [jobData, setJobData]= useState([])
     },[])
 
     const getJobData=()=>{
-        axios.get("http://localhost:3001/jobData").then(({data})=>{
+        axios.get("https://jsonmock-pa4s.onrender.com/jobData").then(({data})=>{
             console.log(data)
             setJobData(data)
     });
